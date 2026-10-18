@@ -1,13 +1,293 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-1",
-    "name": "Hole_Drilling_Template",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-1",
+  "name": "Hole_Drilling_Template",
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Circle",
+      "x": 0.3,
+      "y": 0.6,
+      "uniqueID": "id-12",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 38.099999999999994,
+          "currentEquation": "1.5*25.4"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.4,
+      "y": 0.6,
+      "uniqueID": "id-15",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 100,
+          "currentEquation": "100"
+        }
+      ]
+    },
+    {
+      "atomType": "Output",
+      "x": 1,
+      "y": 0.5,
+      "uniqueID": "id-2",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.5,
+      "y": 0.7,
+      "uniqueID": "id-25",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 90,
+          "currentEquation": "90"
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.6,
+      "y": 0.7,
+      "uniqueID": "id-31",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": -50,
+          "currentEquation": "-50"
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.8,
+      "y": 0.3,
+      "uniqueID": "id-37",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.4,
+      "y": 0.4,
+      "uniqueID": "id-4",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 70,
+          "currentEquation": "70"
+        },
+        {
+          "name": "y length",
+          "ioValue": 50,
+          "currentEquation": "50"
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.6,
+      "y": 0.8,
+      "uniqueID": "id-41",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 8
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.7,
+      "y": 0.8,
+      "uniqueID": "id-44",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 100,
+          "currentEquation": "100"
+        }
+      ]
+    },
+    {
+      "atomType": "Fusion",
+      "x": 0.7,
+      "y": 0.5,
+      "uniqueID": "id-48",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Shape2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "unionType": "Fusion"
+    },
+    {
+      "atomType": "Export",
+      "x": 0.8,
+      "y": 0.7,
+      "uniqueID": "id-53",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "File Type",
+          "ioValue": "STEP",
+          "currentEquation": "STEP"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "STL Tolerance",
+          "ioValue": 0.05
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Hole_Drilling_Template",
+          "currentEquation": "Hole_Drilling_Template"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "Hole_Drilling_Template"
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.5,
+      "y": 0.4,
+      "uniqueID": "id-8",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 40,
+          "currentEquation": "40"
+        }
+      ]
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-12",
+      "ap2ID": "id-15"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-15",
+      "ap2ID": "id-25"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-25",
+      "ap2ID": "id-31"
+    },
+    {
+      "ap2Name": "Shape2",
+      "ap1ID": "id-31",
+      "ap2ID": "id-48"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-37",
+      "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-37",
+      "ap2ID": "id-53"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-4",
+      "ap2ID": "id-8"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-41",
+      "ap2ID": "id-44"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-44",
+      "ap2ID": "id-48"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-48",
+      "ap2ID": "id-37"
+    },
+    {
+      "ap2Name": "retain",
+      "ap1ID": "id-8",
+      "ap2ID": "id-37"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
